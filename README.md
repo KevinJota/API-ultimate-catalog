@@ -46,4 +46,4 @@ Esta é uma API RESTful construída com Node.js, Express.js e MongoDB para geren
 
 ## Créditos
 
-Este projeto foi elaborado por Kevin J, Jardel Monte e Heitor M da Escola SENAI Suíço-Brasileira Paulo Ernesto Tolle, Santo Amaro 2024.
+Este projeto foi concebido durante os meses de Maio e Junho de 2024 por Kevin Alaca, Jardel Monte e Heitor Muniz, alunos do curso técnico de Desenvolvimento de Sistemas na Escola SENAI Suíço-Brasileira Paulo Ernesto Tolle, localizada em Santo Amaro, São Paulo.
