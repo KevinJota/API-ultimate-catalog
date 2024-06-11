@@ -25,7 +25,7 @@ Esta é uma API RESTful construída com Node.js, Express.js e MongoDB para geren
    - Certifique-se de que o MongoDB está em execução localmente ou defina a URI de conexão no arquivo `src/utils/database.mjs`
 
 4. **Execução:**
-   - Inicie o servidor: `npm start`
+   - Inicie o servidor: `node src/index.mjs`
    - A aplicação estará disponível em: `http://localhost:3002`
 
 ## Endpoints da API
@@ -46,4 +46,4 @@ Esta é uma API RESTful construída com Node.js, Express.js e MongoDB para geren
 
 ## Créditos
 
-Este projeto foi elaborado por Kevin J, Lucas Santana, Jardel e Heitor M da Escola SENAI Suíço-Brasileira Paulo Ernesto Tolle, Santo Amaro 2024.
+Este projeto foi elaborado por Kevin J, Jardel e Heitor M da Escola SENAI Suíço-Brasileira Paulo Ernesto Tolle, Santo Amaro 2024.
