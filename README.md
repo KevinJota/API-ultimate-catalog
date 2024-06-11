@@ -17,8 +17,8 @@ Esta é uma API RESTful construída com Node.js, Express.js e MongoDB para geren
    - MongoDB instalado e em execução
 
 2. **Instalação:**
-   - Clone este repositório: `git clone https://github.com/seu-usuario/nome-do-repositorio.git`
-   - Navegue até o diretório do projeto: `cd nome-do-repositorio`
+   - Clone este repositório: `git clone https://github.com/KevinJota/API-ultimate-catalog.git`
+   - Navegue até o diretório do projeto: `cd API-ultimate-catalog`
    - Instale as dependências: `npm install`
 
 3. **Configuração do Banco de Dados:**
