@@ -2,13 +2,15 @@ import { Router } from 'express';
 import { gamesList, createGame } from '../services/game.mjs';
 import Game from '../models/game.mjs'; 
 
-const router = Router();
+const router = Router(); // Cria uma instância do roteador do Express
 
+// Rota para obter a lista de todos os jogos
 router.get('/', async (req, res) => {
     const games = await gamesList();
     res.send(games);
 });
 
+// Rota para obter um jogo por ID específico
 router.get('/:_id', async (req, res) => {
     try {
         const game = await Game.findById(req.params._id);
@@ -22,6 +24,7 @@ router.get('/:_id', async (req, res) => {
     }
 });
 
+// Rota para obter jogos por título
 router.get('/titulo/:title', async (req, res) => {
     const titulo = req.params.title;
     try {
@@ -32,6 +35,10 @@ router.get('/titulo/:title', async (req, res) => {
         res.status(500).send('Erro ao buscar os jogos');
     }
 });
+
+/* As outras rotas seguem um padrão similar, 
+permitindo buscar jogos por gênero, plataforma, 
+classificação etária, ano de lançamento e data de criação. */
 
 router.get('/genero/:genero', async (req, res) => {
     const genero = req.params.genero;
