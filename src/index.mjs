@@ -1,18 +1,26 @@
-// Importa os módulos necessários
-import express        from 'express';
+import express from 'express';
 import gameController from './controllers/game.mjs';
-import cors           from 'cors';
+import userController from './controllers/user.mjs';
+import cors from 'cors';
+import databaseConnection from './utils/database.mjs';
 
-const app = express(); // Importa o módulo Express.js para criar o servidor
+const app = express();
 const port = 3002;
 
-// Adiciona middleware para permitir solicitações de qualquer origem
+// Middleware para JSON e CORS
 app.use(express.json());
 app.use(cors());
 
+// Conexão com o banco de dados MongoDB
+databaseConnection();
+
+// Rotas para os jogos
 app.use('/game', gameController);
 
-// URL de conexão com o Banco do MongoDB
+// Rotas para os usuários
+app.use('/user', userController);
+
+// Inicialização do servidor
 app.listen(port, () => {
-  console.log(`App rodando em http://localhost:${port}`);
+    console.log(`App rodando em http://localhost:${port}`);
 });
