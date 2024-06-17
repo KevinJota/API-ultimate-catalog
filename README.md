@@ -1,6 +1,6 @@
 # API de Catálogo de Jogos
 
-Esta é uma API RESTful construída com Node.js, Express.js e MongoDB para gerenciar um catálogo de jogos. A API permite a criação, listagem, busca, atualização e exclusão de jogos.
+Esta é uma API RESTful construída com Node.js, Express.js e MongoDB para gerenciar um catálogo de jogos. A API permite a criação, listagem, busca, atualização e exclusão de jogos, além de integração com usuários para gestão de jogos favoritos..
 
 ## Funcionalidades Principais
 
@@ -9,6 +9,12 @@ Esta é uma API RESTful construída com Node.js, Express.js e MongoDB para geren
 - Adicionar um novo jogo
 - Atualizar informações de um jogo existente
 - Excluir um jogo pelo ID
+- Adicionar/registrar um novo Usuario
+- Autenticar Login de usuario
+- Listar todos os Usuarios
+- Buscar usuario pelo ID
+- Excluir usuario pelo ID
+- Listar, Adicionar, Exluir jogos da lista de favoritos pelo ID de um Usuario e seus jogos
 
 ## Configuração
 
@@ -43,6 +49,14 @@ Esta é uma API RESTful construída com Node.js, Express.js e MongoDB para geren
 - **POST /game:** Adiciona um novo jogo.
 - **DELETE /game/:id:** Exclui um jogo pelo ID.
 - **PUT /game/:id:** Atualiza um jogo pelo ID.
+- **POST /user/register:** Registra um novo usuário.
+- **POST /user/login:** Autentica o login do usuário.
+- **GET /user/:id:** Obtém dados do usuário pelo ID.
+- **GET /user:** Obtém dados de todos os usuarios.
+- **POST /user/:userId/favorites/:gameId:** Adiciona um jogo aos favoritos do usuário.
+- **GET /user/:userId/favorites:** Lista todos os jogos favoritos de um usuário.
+- **DELETE /user/:userId/favorites/:gameId:** Remove um jogo da lista de favoritos do usuário.
+- **DELETE /user/:id:** Exclui um usuário pelo ID
 
 ## Créditos
 
